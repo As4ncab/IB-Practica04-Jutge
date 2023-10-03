@@ -18,7 +18,7 @@ Se señalan a continuación los aspectos más relevantes (la lista no es exhaust
  * Ha de demostrar que conoce el proceso de compilación de programas usando el compilador de C++ de GNU
  * Ha de demostrar su capacidad para establecer un fichero de configuración de vim para sus tareas de edición en la asignatura
  * Ha de acreditar que dispone de una cuenta de usuario en la plataforma Jutge y que conoce los fundamentos de trabajo en esa plataforma
- * Se comprobará que todos los ficheros (*.cc, *.h) de sus prácticas incluyen un comentario de cabecera
+ * Se comprobará que todos los ficheros (`*.cc`, `*.h`) de sus prácticas incluyen un comentario de cabecera
  * Ha de acreditar que es capaz de editar ficheros remotos en su VM usando vi
  * Ha de demostrar que es capaz de ejecutar comandos Linux en su VM
  * Ha de acreditarse que se es capaz de conectarse a su máquina virtual (VM) de la asignatura
@@ -27,9 +27,9 @@ Se señalan a continuación los aspectos más relevantes (la lista no es exhaust
 
 Para cada una de las prácticas de Informática Básica el profesorado de la asignatura creará un repositorio público en GitHub que contendrá, además del enunciado de la práctica que se propone realizar, algunos ficheros que pudieran ser necesarios para el trabajo propuesto.
 
-El repositorio correspondiente a esta práctica está accesible a través de este enlace de modo que la primera tarea a desarrollar es clonar (copiar) ese repositorio en un directorio adecuado de su máquina virtual de la asignatura. La dirección que ha de usar para clonar el directorio la puede hallar en la pestaña Code de la página anterior, seleccionando la opción SSH en el desplegable que se abre en esa opción. Así pues, el comando para clonar el repositorio de esta práctica es
+El repositorio correspondiente a esta práctica está accesible a través de [este enlace](https://github.com/IB-2023-2024/P04-first-programs) de modo que la primera tarea a desarrollar es clonar (copiar) ese repositorio en un directorio adecuado de su máquina virtual de la asignatura. La dirección que ha de usar para clonar el directorio la puede hallar en la pestaña Code de la página anterior, seleccionando la opción SSH en el desplegable que se abre en esa opción. Así pues, el comando para clonar el repositorio de esta práctica es
 
-git clone git@github.com:IB-2023-2024/P04-first-programs.git <directorio en mi máquina virtual>
+    git clone git@github.com:IB-2023-2024/P04-first-programs.git <directorio en mi máquina virtual>
 
 Comience su trabajo en esta práctica clonando el repositorio anterior.
 
@@ -40,10 +40,10 @@ En vim se pueden modificar muchos parámetros del editor mientras se editan los 
 
 Cualquier tipo de opción, macro, comando o función que vim entienda puede ser incluída en el fichero .vimrc en el directorio $HOME del usuario de modo que se aplique como opción por defecto cuando se lance Vim. Pruebe a crear un fichero .vimrc (por defecto normalmente no existirá) en el directorio HOME de su máquina virtual, que contenga lo siguiente:
 
-set nocompatible
-set number
-set ruler
-syntax on
+    set nocompatible
+    set number
+    set ruler
+    syntax on
 
 Esto hará que siempre que edite un fichero, aparezca numeración de líneas (set number), un indicador de fila y columna en la barra de estado (set ruler) y resaltado de sintaxis (si está definida para el tipo de fichero que esté editando) activado. Es algo así como el fichero de opciones de vim para nuestro usuario.
 
